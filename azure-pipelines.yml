@@ -34,7 +34,10 @@ steps:
     majorVersion: '1'
     minorVersion: '0'
     patchVersion: '0'
- 
+
+- task: NuGetAuthenticate@1
+  displayName: 'NuGet Authenticate'
+  
 - task: NuGetCommand@2
   displayName: 'Publish NuGet package'
   inputs:
